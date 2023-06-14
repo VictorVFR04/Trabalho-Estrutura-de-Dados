@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.trabalho_2_bimestre;
+import javax.swing.JOptionPane;
 
 /**
  * Desenvolvedores:
@@ -10,14 +11,24 @@ package com.mycompany.trabalho_2_bimestre;
  * Mateus Martins da Silva (RA: 00231293)
  */
 public class Ordenacoes {
-    int[] numeros = {32,43,1,132,43,5,4,7};
     
+    int tamanho;
+    int elemento;
+    int[] numeros = new int[tamanho];
     
-    public void ordenarInsercao (){
+    public void inserirNumeros(){
+        tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite o Tamanho do vetor"));
         
+        for(int i = 0; i < tamanho; i++){
+            elemento = Integer.parseInt(JOptionPane.showInputDialog("Digite o Tamanho do vetor"));
+            numeros[i] = elemento;
+        }
     }
     
-    public void ordenarSelecao (){
+    public void ordenarInsercao(){
+    }
+    
+    public void ordenarSelecao(){
         for(int i = 0; i < numeros.length; i++){
             int posicaoMenor = i;
             

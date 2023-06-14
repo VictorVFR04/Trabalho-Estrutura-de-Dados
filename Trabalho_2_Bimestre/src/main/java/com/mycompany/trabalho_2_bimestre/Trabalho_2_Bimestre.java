@@ -15,22 +15,35 @@ public class Trabalho_2_Bimestre {
     public static void main(String[] args) {
     Ordenacoes ordenacoes = new Ordenacoes();
           
-    int opcao = Integer.parseInt(JOptionPane.showInputDialog(" (1) Inserir Vetor de Inteiros \n (2) Ordenar por Inserção \n (3) Ordernar por Seleção \n (4) Ordernar por Bolha \n (5) Pesquisar Número"));    
+    while(true){
+    
+    int opcao = Integer.parseInt(JOptionPane.showInputDialog("Escolha usando um numero inteiro: \n(1) Inserir Vetor de Inteiros \n (2) Ordenar por Inserção \n (3) Ordernar por Seleção \n (4) Ordernar por Bolha \n (5) Pesquisar Número"));    
     
      switch (opcao) {
          case 1: 
-         ordenacoes.ordenarBolha();
+         ordenacoes.inserirNumeros();
          break;
           
          case 2: 
-         ordenacoes.ordenarSelecao();
+
          break;
          
          case 3:
+         ordenacoes.ordenarSelecao();
+         break;
          
+         case 4:
+         ordenacoes.ordenarBolha();
+         break;
+         
+         case 0:
+             JOptionPane.showMessageDialog(null, "Você escolheu sair!");
+             System.exit(0);
+         default:
+             JOptionPane.showMessageDialog(null, "Opção Inválida!");
      }
 
-   
+        }
     }
 }
 
