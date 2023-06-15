@@ -17,7 +17,7 @@ public class Trabalho_2_Bimestre {
           
     while(true){
     
-    int opcao = Integer.parseInt(JOptionPane.showInputDialog("Escolha usando um numero inteiro: \n(1) Inserir Vetor de Inteiros \n (2) Ordenar por Inserção \n (3) Ordernar por Seleção \n (4) Ordernar por Bolha \n (5) Pesquisar Número"));    
+    int opcao = Integer.parseInt(JOptionPane.showInputDialog("Escolha usando um numero inteiro: \n\n (1) Inserir Vetor de Inteiros \n (2) Ordenar por Inserção \n (3) Ordernar por Seleção \n (4) Ordernar por Bolha \n (5) Pesquisar Número"));    
     
      switch (opcao) {
          case 1: 
@@ -25,7 +25,7 @@ public class Trabalho_2_Bimestre {
          break;
           
          case 2: 
-
+         ordenacoes.exibirVetorOriginal();
          break;
          
          case 3:

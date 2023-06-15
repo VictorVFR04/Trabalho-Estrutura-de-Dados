@@ -13,14 +13,14 @@ import javax.swing.JOptionPane;
 public class Ordenacoes {
     
     int tamanho;
-    int elemento;
-    int[] numeros = new int[tamanho];
+    int[] numeros;
     
     public void inserirNumeros(){
         tamanho = Integer.parseInt(JOptionPane.showInputDialog("Digite o Tamanho do vetor"));
+        numeros = new int[tamanho];
         
         for(int i = 0; i < tamanho; i++){
-            elemento = Integer.parseInt(JOptionPane.showInputDialog("Digite o Tamanho do vetor"));
+            int elemento = Integer.parseInt(JOptionPane.showInputDialog("Digite um numero inteiro"));
             numeros[i] = elemento;
         }
     }
@@ -66,5 +66,10 @@ public class Ordenacoes {
           for(int i = 0; i < numeros.length; i++){
             System.out.println("posicao ["+i+"] = "+numeros[i]);
          }
+    }
+    public void exibirVetorOriginal(){
+        for (int i = 0; i < numeros.length; i++){
+            JOptionPane.showMessageDialog(null, numeros[i] + "");
+        }
     }
 }
