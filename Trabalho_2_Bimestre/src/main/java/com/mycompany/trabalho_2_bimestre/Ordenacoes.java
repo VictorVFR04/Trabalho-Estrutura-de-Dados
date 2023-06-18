@@ -26,7 +26,6 @@ public class Ordenacoes {
             System.out.println("Posição["+i+"] = "+vetor[i]);                   
         }
 }
-   
     
     public static void ordenarSelecao(int[] vetor){
         for(int i = 0; i < vetor.length; i++){
