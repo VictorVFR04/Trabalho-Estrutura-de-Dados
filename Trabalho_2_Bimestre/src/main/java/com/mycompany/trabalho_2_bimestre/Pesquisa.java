@@ -5,9 +5,8 @@
 package com.mycompany.trabalho_2_bimestre;
 
 /**
- * Desenvolvedores:
+ * Desenvolvedor:
  * Victor Fagundes Ramos (RA:00239823)
- * Mateus Martins da Silva (RA: 00231293)
  */
 public class Pesquisa {
     
@@ -19,6 +18,7 @@ public class Pesquisa {
         }
         return -1;    
     }
+    
     public static int pesquisaBinaria(int[] vetor, int elemento, int esquerda, int direita){
         if (esquerda > direita) {
         return -1;

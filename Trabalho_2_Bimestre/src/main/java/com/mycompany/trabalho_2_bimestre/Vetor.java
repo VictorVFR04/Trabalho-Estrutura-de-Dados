@@ -3,13 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.mycompany.trabalho_2_bimestre;
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /**
- * Desenvolvedores:
+ * Desenvolvedor:
  * Victor Fagundes Ramos (RA:00239823)
- * Mateus Martins da Silva (RA: 00231293)
  */
 public class Vetor {
     Scanner ler = new Scanner(System.in);
@@ -18,9 +16,8 @@ public class Vetor {
     private int tamanho;
     long duracao;
     
-    
       public void inserirNumeros(){
-        System.out.println("\nDigite o Tamanho do vetor");
+        System.out.println("\nDigite o Tamanho do vetor: ");
         tamanho = ler.nextInt();
         numeros = new int[tamanho];
         vetorOriginal = new int[tamanho];

@@ -5,9 +5,8 @@
 package com.mycompany.trabalho_2_bimestre;
 
 /**
- * Desenvolvedores:
+ * Desenvolvedor:
  * Victor Fagundes Ramos (RA:00239823)
- * Mateus Martins da Silva (RA: 00231293)
  */
 public class Ordenacoes {
     
