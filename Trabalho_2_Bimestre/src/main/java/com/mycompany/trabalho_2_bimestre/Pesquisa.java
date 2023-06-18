@@ -27,7 +27,7 @@ public class Pesquisa {
     int meio = (esquerda + direita) / 2;
 
     if (vetor[meio] == elemento) {
-        return meio; // Elemento encontrado
+        return meio;
     } else if (vetor[meio] < elemento) {
         return pesquisaBinaria(vetor, elemento, meio + 1, direita);
     } else {
