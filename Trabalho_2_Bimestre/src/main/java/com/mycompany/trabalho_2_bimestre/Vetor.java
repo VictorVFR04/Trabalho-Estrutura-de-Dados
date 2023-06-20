@@ -31,27 +31,27 @@ public class Vetor {
     }
       
       public void ordenarInsercao(){
-          long comecar = System.nanoTime();
+          long comecar = System.currentTimeMillis();
           Ordenacoes.ordenarInsercao(numeros);
-          long finalizar = System.nanoTime();
+          long finalizar = System.currentTimeMillis();
           duracao = finalizar - comecar;
-          System.out.println("\nTempo de execução(ordenarInsercao): " + duracao+ " nanosegundo");
+          System.out.println("\nTempo de execução(ordenarInsercao): " + duracao);
       }   
       
       public void ordenarSelecao(){
-          long comecar = System.nanoTime();
+          long comecar = System.currentTimeMillis();
           Ordenacoes.ordenarSelecao(numeros);
-          long finalizar = System.nanoTime();
+          long finalizar = System.currentTimeMillis();
           duracao = finalizar - comecar;
-          System.out.println("\nTempo de execução(ordenarSelecao): " + duracao+ " nanosegundo");
+          System.out.println("\nTempo de execução(ordenarSelecao): " + duracao);
       }
       
       public void ordenarBolha(){
-          long comecar = System.nanoTime();
+          long comecar = System.currentTimeMillis();
           Ordenacoes.ordenarBolha(numeros);
-          long finalizar = System.nanoTime();
+          long finalizar = System.currentTimeMillis();
           duracao = finalizar - comecar;
-          System.out.println("\nTempo de execução(ordenarBolha): " + duracao+ " nanosegundo");
+          System.out.println("\nTempo de execução(ordenarBolha): " + duracao);
       }    
       
        public void pesquisaLinear(){
